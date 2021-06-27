@@ -3,6 +3,21 @@
     align-items:stretch;
     height: 100vh;
 
+    &.dark {
+        background: #444;
+
+        main {
+            div.main-content h2 {
+                color: #ddd;
+            }
+
+            p {
+                color: #bbb;
+            }
+        } 
+
+    }
+
     aside {
         flex: 7;
     
@@ -142,4 +157,5 @@
         }
     }
 }
+
 

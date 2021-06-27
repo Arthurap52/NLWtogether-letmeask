@@ -9,6 +9,7 @@ import { RoomCode } from '../components/RoomCode'
 import { useAuth } from '../hooks/useAuth'
 import { useRoom } from '../hooks/useRoom'
 import { database } from '../services/firebase'
+import { useTheme } from '../hooks/useTheme';
 
 import '../styles/room.scss'
 
@@ -23,6 +24,8 @@ export function Room() {
   const roomId = params.id
 
   const {title, questions} = useRoom(roomId)
+
+  const {theme, toggleTheme} = useTheme();
 
   async function handleSendQuestion(event: FormEvent) {
     event.preventDefault();
@@ -61,11 +64,17 @@ export function Room() {
   }
 
   return (
-    <div id="page-room">
+    <div id="page-room" className={theme}>
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
-          <RoomCode code={roomId} />
+          <div>
+            <button className="toggle-theme-button" onClick={toggleTheme}>
+              <span>Trocar tema: {theme}</span>
+            </button>
+
+            <RoomCode code={roomId} />
+          </div>
         </div>
       </header>
 

@@ -8,7 +8,7 @@ import answerImg from '../assets/images/answer.svg'
 import { Button } from '../components/Button'
 import { Question } from '../components/Question'
 import { RoomCode } from '../components/RoomCode'
-//import { useAuth } from '../hooks/useAuth'
+import { useTheme } from '../hooks/useTheme'
 import { useRoom } from '../hooks/useRoom'
 
 
@@ -26,6 +26,8 @@ export function AdminRoom() {
   const roomId = params.id
   
   const {title, questions} = useRoom(roomId)
+
+  const {theme, toggleTheme} = useTheme();
 
   async function handleEndRoom() {
     await database.ref(`rooms/${roomId}`).update({
@@ -54,11 +56,15 @@ export function AdminRoom() {
   }
 
   return (
-    <div id="page-room">
+    <div id="page-room" className={theme}>
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
+          
           <div>
+            <button className="toggle-theme-button" onClick={toggleTheme}>
+              <span>Trocar tema: {theme}</span>
+            </button>
             <RoomCode code={roomId} />
             <Button isOutlined onClick={handleEndRoom}>Encerrar Sala</Button>
           </div>

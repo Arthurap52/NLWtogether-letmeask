@@ -11,10 +11,14 @@ import { Button } from '../components/Button'
 import '../styles/auth.scss'
 import { useAuth } from '../hooks/useAuth';
 import { FormEvent, useState } from 'react';
+import { useTheme } from '../hooks/useTheme';
 
 export function Home() {
   const history = useHistory();
   const {signInWithGoogle, user} = useAuth();
+
+  const {theme, toggleTheme} = useTheme();
+
   const [roomCode, setRoomCode] = useState('');
 
   async function handleCreateRoom() {
@@ -47,7 +51,7 @@ export function Home() {
     history.push(`/rooms/${roomCode}`);
   }
   return (
-    <div id="page-auth">
+    <div id="page-auth" className={theme}>
       <aside>
         <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
         <strong>Crie salas de Q&amp;A ao vivo</strong>
