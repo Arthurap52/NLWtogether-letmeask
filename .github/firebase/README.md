@@ -1,15 +1,14 @@
 <br />
 <h1 align="center">
-  <img alt="Firebase configuração" src="https://github.com/EddyPBR/letmeask/blob/main/.github/assets/firebase-logo.png" width="180px" /> 
+  <img alt="Firebase configuração" src="https://github.com/Aarthurap52/NLWtogether-letmeask/blob/main/.github/assets/firebase-logo.png" width="180px" /> 
   <br />
   <br />
-  Guia Firebase
+  Guia de configuração do Firebase
 </h1>
 <br />
 
-Para executarmos o projeto devemos configurar o firebase para setarmos algumas configurações,
-mas o firebase é simples, fácil e rápido de ser configurado, esse guia é para lhe ajudar a 
-configurar o projeto, então vamos lá? :)
+Para executarmos o projeto primeiro é preciso configurar o firebase , esse guia é para lhe ajudar a 
+configurar o projeto, então mãos a obra!
 
 <br />
 
@@ -18,8 +17,8 @@ configurar o projeto, então vamos lá? :)
 Assumindo que você tenha feito o login siga o passo-a-passo logo abaixo:
 
 - No menu superior clique em "ir para o console", vai carregar uma nova página;
-- Agora clique em "adicionar projeto", e informe o nome (Ex.: letmeask), e continue;
-- Desative o google analitcs e clique em "criar projeto", aguarde e continue, aguarde mais uma vez e você será redirecionado;
+- Clique em "adicionar projeto", e informe o nome do projeteo (Ex.: letmeask), e continue;
+- Desative o google analitcs e clique em "criar projeto", continue e aguarde até você ser redirecionado;
 - No menu lateral esquerdo na parte de "criação" clique em "authentication";
 - Agora vá na aba "Sign-in method" e selecione "Google", agora clique no botão de ativar, informe seu email (pode ser o que você fez login) e salve;
 - No menu lateral esquerdo novamente vá em "Realtime database";
@@ -38,13 +37,13 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 NODE_ENV=
 ```
 
-- Pronto seu firebase esta configurado;
+- Após isso seu firebase esta configurado;
 <br />
 
 ## Configuração do Realtime Database
 
-Agora precisamos configurar somente as permissões do banco de dados do firebase, isso é bem simples. Primeiramente no menu lateral a esquerda
-clique em `Realtime Database`, agora selecione a aba `Regras`, enfim na box com o JSON das regras copie e cole o seguinte:
+Agora é preciso configurar as permissões do banco de dados do firebase. Primeiramente no menu lateral a esquerda
+clique em `Realtime Database`, agora selecione a aba `Regras`, enfim na box com o JSON das regras copie e cole as seguintes linhas de codigo:
 
 ```
 {
@@ -75,7 +74,4 @@ Pronto seu banco de dados esta configurado!
 
 ## Continuando
 
-O projeto esta quase que totalmente pronto para ser executado, siga o resto do passo-a-passo e espero que goste :)
-
-att,
-@EddyPBR
+O projeto esta quase pronto, agora siga o resto do passo a passo para finalizar 
