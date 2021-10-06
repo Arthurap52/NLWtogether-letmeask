@@ -19,13 +19,8 @@
 ## :bookmark: Resumo
 <br />
 
-Já pensou que em lives as pessoas recebem muitas perguntas, principalmente quando se ensina alguma coisa,
-ou apresenta algum produto/serviço? - Pois é, são várias perguntas e os apresentadores das lives tem que
-responder as perguntas, afinal, são clientes/possívels clientes não é mesmo?
-
-Sabendo dessa necessidade, a #Rocketseat no seu evento #NextLevelWeek teve a brilhante idéaia de elaborar 
-um projeto que consiste no ranqueamento de perguntas para que as perguntas prioritárias dos aprensetadores
-das lives sejão as mais ranqueadas ou seja, as dúvidas que são mais frequentes pela comunidade.
+Você já pensou que as pessoas encontrarão muitos problemas na vida, especialmente ao ensinar coisas, Ou apresentar produtos / serviços? 
+-Sim, há algumas perguntas, o anfitrião deve Responda à pergunta, eles são clientes / prováveis clientes afinal, certo? Depois de entender essa necessidade, #Rocketseat teve a brilhante ideia de elaborar em seu evento #NextLevelWeek, Um projeto que consiste em questões de classificação para que as questões prioritárias do apresentador A classificação mais alta da vida é a dúvida mais comum na comunidade.
 
 
 <br />
@@ -50,13 +45,9 @@ Foram adicionadas algumas funcionalidades extras e efeitos visuais para melhorar
 ainda mais intuítivo, lembrando que este projeto foi desenvolvido por mim utilizando o NEXTJS, 
 dentre as funcionalidades extras estão:
 
-- Toasts de avisos do sistemas usando o react-hot-toast
-- Modal de ações críticas do sistema utilizando o react-modal
+- Opção de alterar entre tema claro ou escuro.
 - Ordenação de comentários por número de likes e perguntas não respondidas
-- Redirecionamento forçado de usuários/não usuários que estão em determinada sala e o admin encerrar a mesma
-- Geração de página estática quando cadastrar nova sala (cada sala tem um arquivo único, apenas comentários são carregados dinâmicamente, motivo: ajuda no SEO no compartilhamento das páginas)
 - Redirecionamento forçado pelo backend quando alguem que NÃO seja o admin da sala tentar acessar a devida página admin
-- PWA utilizando o next-pwa
 
 
 <br />
@@ -69,7 +60,7 @@ Para rodar o progeto, basta seguir o passo a passo abaixo:
 - 1º: É preciso ter o NODE instalado na sua máquina;
 - 2º: Faça o download deste projeto ou clone na sua maquina;
 - 3º: No terminal/prompt abra o diretório do projeto e execute o comando `npm run` ou `yarn`;
-- 4º: Enquanto executa o comando... siga o passo-a-passo para configurar o firebase neste [link-firebase](https://github.com/EddyPBR/letmeask/tree/main/.github/firebase);
+- 4º: Enquanto executa o comando... siga o passo-a-passo para configurar o firebase neste [link-firebase](https://github.com/Arthurap52/NLWtogether-letmeask/tree/main/.github/firebase);
 - 5º: Agora crie um arquivo `.env.local` no diretório raiz do projeto;
 - 6º: Copie as variaveis do arquivo `.env.example` e cole no `.env.local`, agora preencha as informações com os dados obtidos no firebase abordado no `passo 4`;
 - 7º: Após finalizado o comando do `passo 3` e com tudo finalizado, execute o comando `npm run dev` ou `yarn dev` para rodar o projeto;
