@@ -38,6 +38,11 @@ Você já pensou que as pessoas encontrarão muitos problemas na vida, especialm
 
 <br />
 
+## 🔥 Preview
+Foi realizado o deploy utilizando a ferramenta de holsting do firebase.
+
+[![Deploy with firebase](https://vercel.com/button)](https://letmeask-260c4.firebaseapp.com)
+
 ## :rocket: Milha extra
 <br />
 
